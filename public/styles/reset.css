@@ -1,0 +1,70 @@
+/* Reset margin, padding, and box-sizing across all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove background on all elements */
+html,
+body {
+  background: none;
+  font-family: sans-serif; /* You can change this to your preferred font */
+}
+
+/* Remove text decoration on links */
+a {
+  text-decoration: none;
+  color: inherit; /* Use the parent's color (optional) */
+}
+
+/* Remove outline for accessibility when focused on links or buttons */
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Make buttons look the same across browsers */
+button,
+input,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Remove default list styles (bullets, numbers) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset form element styles */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Ensure images are responsive and don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
